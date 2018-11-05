@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index') ;
+ /*Route::pattern('student_no','s[0-9]{10}');
 
-Route::pattern('student_no','s[0-9]{10}');
 Route::group(['prefix'=>'student'],function() {
     Route::get('{student_no}', [
         'as'=>'student',
@@ -27,7 +25,7 @@ Route::group(['prefix'=>'student'],function() {
         'uses'=> function ($student_no, $subject = null) {
         return "學號:" . $student_no . "的" . ((is_null($subject)) ? "所有科目" : $subject) . "成績";
     }])->where(['(chinese|english|math)']);
-});
+});*/
 
 
 /*Route::get('student/{student_no}/score', function ($student_no) {
