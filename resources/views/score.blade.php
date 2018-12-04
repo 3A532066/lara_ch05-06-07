@@ -1,7 +1,10 @@
 
 @extends('layouts.master')
 
- <div class="container">
+@section('title','詳細資料')
+
+@section('content')
+
 
  	<div class="page-header">
 
@@ -35,5 +38,5 @@
 			</p>
 		@endif
 	</div>
- </div>
+
  @stop 
