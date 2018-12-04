@@ -10,7 +10,7 @@
 
  	<div class="row">
  		<p>
-			學號：{{ Sstudent_no }}
+			學號：{{ $student_no }}
  		</p>
  		<p>
 			姓名：小明
@@ -24,12 +24,12 @@
 				國文：60
 			</p>
 		@endif
- 		@if ( is_null($subject) || $subject=='english)
+ 		@if ( is_null($subject) || $subject=='english')
 			<p>
 				英文：60
 			</p>
 		@endif
- 		@if ( is_null($subject) || $subject=='math)
+ 		@if ( is_null($subject) || $subject=='math')
 			<p>
 				數學：60
 			</p>
